@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewal Reminders - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/add-vendor.html">Add Vendor</a>
+            <a href="/add-contract.html">Add Contract</a>
+            <a href="/contracts.html">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="container">
+        <h1>Active Renewal Reminders</h1>
+        <p class="subtitle">Contracts flagged at their notice-period boundary</p>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>ID</th><th>Contract</th><th>Vendor</th><th>End Date</th><th>Notice Days</th><th>Action</th></tr></thead>
+                <tbody id="reminderTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vendor - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/add-vendor.html" class="active">Add Vendor</a>
+            <a href="/add-contract.html">Add Contract</a>
+            <a href="/contracts.html">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="form-card">
+        <h1>Add Vendor</h1>
+        <p class="page-subtitle">Enter the vendor details below</p>
+        <form id="vendorForm">
+            <div class="form-group">
+                <label for="name">Vendor Name</label>
+                <input type="text" id="name" placeholder="Enter vendor name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="vendor@example.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="Enter phone number">
+            </div>
+            <button class="button primary-button" type="submit">Save Vendor</button>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Watch - Renewal Reminder Tracker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/add-vendor.html">Add Vendor</a>
+            <a href="/add-contract.html">Add Contract</a>
+            <a href="/contracts.html">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="container">
+        <h1>Contract Watch</h1>
+        <p class="subtitle">Contract Renewal Reminder Tracker</p>
+
+        <div class="card-grid">
+            <a class="feature-card" href="/add-vendor.html">
+                <h2>Vendor Management</h2>
+                <p>Add and view vendor information used by contracts.</p>
+            </a>
+            <a class="feature-card" href="/add-contract.html">
+                <h2>Add Contract</h2>
+                <p>Store vendor, start date, end date and renewal notice period.</p>
+            </a>
+            <a class="feature-card" href="/contracts.html">
+                <h2>View Contracts</h2>
+                <p>View all contracts, renewal flags and document references.</p>
+            </a>
+            <a class="feature-card" href="/renewal-reminders.html">
+                <h2>Renewal Reminders</h2>
+                <p>See contracts currently flagged for renewal review.</p>
+            </a>
+            <a class="feature-card" href="/expiring-contracts.html">
+                <h2>Next 30 Days</h2>
+                <p>View active contracts expiring within the next 30 days.</p>
+            </a>
+            <a class="feature-card" href="/contracts.html">
+                <h2>Renewal Decisions</h2>
+                <p>Record renewed or terminated decisions with the new end date.</p>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3>Business Rule</h3>
+            <p>A contract is automatically flagged exactly on its renewal notice boundary before the end date. Terminated contracts are never included in active renewal reminders.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>

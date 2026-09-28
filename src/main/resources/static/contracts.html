@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contracts - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/add-vendor.html">Add Vendor</a>
+            <a href="/add-contract.html">Add Contract</a>
+            <a href="/contracts.html" class="active">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="container">
+        <h1>Contract List</h1>
+        <p class="subtitle">View and manage all contract records</p>
+        <div class="action-bar">
+            <a href="/add-contract.html" class="button primary-button">+ Add Contract</a>
+            <a href="/renewal-reminders.html" class="button secondary-button">Renewal Reminders</a>
+            <a href="/expiring-contracts.html" class="button secondary-button">Expiring in 30 Days</a>
+        </div>
+        <div id="pageMessage" class="message"></div>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Contract</th>
+                    <th>Vendor</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Notice Days</th>
+                    <th>Status</th>
+                    <th>Renewal Flag</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="contractTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

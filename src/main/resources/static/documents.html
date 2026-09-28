@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/contracts.html" class="active">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="container">
+        <h1>Contract Document References</h1>
+        <p class="subtitle" id="documentsSummary">Loading...</p>
+
+        <div class="form-card compact-card">
+            <form id="documentForm">
+                <div class="form-group">
+                    <label for="reference">Document Reference</label>
+                    <input type="text" id="reference" placeholder="Example: C:\\Contracts\\vendor-agreement.pdf or https://..." required>
+                </div>
+                <button class="button primary-button" type="submit">Attach Reference</button>
+                <p id="message" class="message"></p>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead><tr><th>#</th><th>Reference</th><th>Action</th></tr></thead>
+                <tbody id="documentTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

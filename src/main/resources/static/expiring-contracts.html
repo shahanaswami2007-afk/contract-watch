@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expiring Contracts - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/add-vendor.html">Add Vendor</a>
+            <a href="/add-contract.html">Add Contract</a>
+            <a href="/contracts.html" class="active">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="container">
+        <h1>Contracts Expiring in the Next 30 Days</h1>
+        <p class="subtitle">Active contracts only; terminated contracts are excluded</p>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>ID</th><th>Contract</th><th>Vendor</th><th>End Date</th><th>Status</th><th>Action</th></tr></thead>
+                <tbody id="expiringTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

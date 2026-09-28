@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewal Decision - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/contracts.html" class="active">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="form-card">
+        <h1>Renewal Decision</h1>
+        <p class="page-subtitle" id="contractSummary">Loading contract...</p>
+        <form id="decisionForm">
+            <div class="form-group">
+                <label for="decision">Decision</label>
+                <select id="decision" required>
+                    <option value="RENEWED">Renewed</option>
+                    <option value="TERMINATED">Terminated</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="decisionDate">Decision Date</label>
+                <input type="date" id="decisionDate">
+            </div>
+            <div class="form-group">
+                <label for="newEndDate">New End Date (required for renewal)</label>
+                <input type="date" id="newEndDate">
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" rows="4" placeholder="Optional notes"></textarea>
+            </div>
+            <button class="button primary-button" type="submit">Save Decision</button>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contract - Contract Watch</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/index.html" class="logo">Contract Watch</a>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/add-vendor.html">Add Vendor</a>
+            <a href="/add-contract.html" class="active">Add Contract</a>
+            <a href="/contracts.html">Contracts</a>
+        </div>
+    </div>
+</nav>
+
+<main class="page-container">
+    <div class="form-card">
+        <h1>Add Contract</h1>
+        <p class="page-subtitle">Store the contract details and renewal notice period</p>
+        <form id="contractForm">
+            <div class="form-group">
+                <label for="contractName">Contract Name</label>
+                <input type="text" id="contractName" placeholder="Example: Annual IT Support Contract" required>
+            </div>
+            <div class="form-group">
+                <label for="vendorId">Vendor</label>
+                <select id="vendorId" required>
+                    <option value="">Loading vendors...</option>
+                </select>
+                <small><a href="/add-vendor.html">Add a vendor first</a></small>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="noticeDays">Renewal Notice Period (days)</label>
+                <input type="number" id="noticeDays" min="0" value="30" required>
+            </div>
+            <button class="button primary-button" type="submit">Save Contract</button>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>
