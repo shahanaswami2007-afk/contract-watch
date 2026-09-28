@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class ContractWatchApplication {
 
-    public static void main(String[] args) {git status
+    public static void main(String[] args) {
         SpringApplication.run(ContractWatchApplication.class, args);
     }
 }
